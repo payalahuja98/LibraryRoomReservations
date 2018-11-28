@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:maxWidth="400dp"
+    android:maxHeight="600dp"
+    android:minWidth="0dp"
+    android:minHeight="0dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainScreen"
+    tools:showIn="@layout/activity_main_screen">
+
+    <Button
+        android:id="@+id/UGL"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="41dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="UGL"
+        app:layout_constraintBottom_toTopOf="@+id/MainLibrary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/MainLibrary"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="showMainLibraryRooms"
+        android:text="Main Library"
+        app:layout_constraintBottom_toTopOf="@+id/Grainger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UGL" />
+
+    <Button
+        android:id="@+id/Grainger"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="216dp"
+        android:onClick="showGraingerRooms"
+        android:text="Grainger"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MainLibrary" />
+</android.support.constraint.ConstraintLayout>
