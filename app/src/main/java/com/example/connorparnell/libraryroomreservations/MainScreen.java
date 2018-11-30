@@ -34,6 +34,18 @@ public class MainScreen extends AppCompatActivity {
                 startActivity(new Intent(MainScreen.this, UGLRooms.class));
             }
         });
+        Button MainLibraryButton = findViewById(R.id.MainLibrary);
+        MainLibraryButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                startActivity(new Intent(MainScreen.this, MainLibraryRooms.class));
+            }
+        });
+        Button GraingerButton = findViewById(R.id.Grainger);
+        GraingerButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                startActivity(new Intent(MainScreen.this, GraingerRooms.class));
+            }
+        });
     }
 
     @Override

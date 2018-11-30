@@ -31,7 +31,7 @@
         android:layout_width="100dp"
         android:layout_height="0dp"
         android:layout_marginBottom="30dp"
-        android:onClick="showMainLibraryRooms"
+        android:onClick="onClick"
         android:text="Main Library"
         app:layout_constraintBottom_toTopOf="@+id/Grainger"
         app:layout_constraintEnd_toEndOf="parent"
