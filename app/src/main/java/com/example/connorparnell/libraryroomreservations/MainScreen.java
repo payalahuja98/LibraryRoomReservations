@@ -30,19 +30,19 @@ public class MainScreen extends AppCompatActivity {
         });
         Button UGLButton = findViewById(R.id.UGL);
         UGLButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
+            public void onClick(android.view.View) {
                 startActivity(new Intent(MainScreen.this, UGLRooms.class));
             }
         });
         Button MainLibraryButton = findViewById(R.id.MainLibrary);
         MainLibraryButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
+            public void onClick(android.view.View) {
                 startActivity(new Intent(MainScreen.this, MainLibraryRooms.class));
             }
         });
         Button GraingerButton = findViewById(R.id.Grainger);
         GraingerButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
+            public void onClick(android.view.View) {
                 startActivity(new Intent(MainScreen.this, GraingerRooms.class));
             }
         });

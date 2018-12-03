@@ -14,39 +14,37 @@
 
     <Button
         android:id="@+id/UGL"
-        android:layout_width="100dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginBottom="41dp"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
         android:clickable="true"
         android:onClick="onClick"
         android:text="UGL"
-        app:layout_constraintBottom_toTopOf="@+id/MainLibrary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="106dp" />
 
     <Button
         android:id="@+id/MainLibrary"
-        android:layout_width="100dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="30dp"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
         android:onClick="onClick"
         android:text="Main Library"
-        app:layout_constraintBottom_toTopOf="@+id/Grainger"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/UGL" />
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="175dp" />
 
     <Button
         android:id="@+id/Grainger"
-        android:layout_width="100dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="216dp"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
         android:onClick="showGraingerRooms"
         android:text="Grainger"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MainLibrary" />
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="241dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHOOSE A LIBRARY:"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="60dp" />
 </android.support.constraint.ConstraintLayout>
