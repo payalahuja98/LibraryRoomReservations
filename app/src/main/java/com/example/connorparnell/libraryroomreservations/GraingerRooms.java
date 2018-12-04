@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class GraingerRooms {
+public class GraingerRooms extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
