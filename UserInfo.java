@@ -11,21 +11,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
-public class UGLRooms extends AppCompatActivity {
-
-    public void selectRooms(View view) {
-        Button selectRoomButton = findViewById(R.id.select_room);
-        selectRoomButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                startActivity(new Intent(UGLRooms.this, UserInfo.class));
-            }
-        });
-    }
+public class UserInfo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_uglrooms_screen);
+        setContentView(R.layout.activity_userinfo_screen);
     }
 
     @Override
