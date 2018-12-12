@@ -13,6 +13,15 @@ import android.widget.Button;
 
 public class UserInfo extends AppCompatActivity {
 
+    public void showMakeRes(View view) {
+        Button timerButton = findViewById(R.id.go_to_timer);
+        timerButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                startActivity(new Intent(UserInfo.this, MakeReservation.class));
+            }
+        });
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
